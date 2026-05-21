@@ -48,6 +48,7 @@ st.markdown(
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 16px;
     }
 
     .brand-title {
@@ -55,21 +56,24 @@ st.markdown(
         font-weight: 800;
         color: #0f172a;
         margin-bottom: 3px;
+        line-height: 1.25;
     }
 
     .brand-subtitle {
         font-size: 14px;
         color: #64748b;
+        line-height: 1.5;
     }
 
     .model-pill {
         background: #eff6ff;
         color: #1d4ed8;
         padding: 10px 16px;
-        border-radius: 999px;
+        border-radius: 12px;
         font-size: 14px;
         font-weight: 700;
         border: 1px solid #bfdbfe;
+        white-space: nowrap;
     }
 
     .nav-card {
@@ -223,6 +227,83 @@ st.markdown(
     [data-testid="stRadio"] label:hover {
         background: #e0ecff;
         border-color: #93c5fd;
+    }
+
+    /* Mobile responsive fixes */
+    @media (max-width: 768px) {
+        .block-container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 1rem;
+        }
+
+        .top-header {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 22px;
+        }
+
+        .brand-title {
+            font-size: 30px;
+            line-height: 1.25;
+        }
+
+        .brand-subtitle {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .model-pill {
+            width: 100%;
+            white-space: normal;
+            text-align: left;
+            border-radius: 12px;
+            padding: 12px 14px;
+            line-height: 1.5;
+            box-sizing: border-box;
+        }
+
+        .hero-card {
+            padding: 28px;
+            border-radius: 20px;
+        }
+
+        .hero-title {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 15px;
+        }
+
+        .feature-card {
+            min-height: auto;
+        }
+
+        .section-card {
+            padding: 22px;
+        }
+
+        .positive-box,
+        .negative-box {
+            font-size: 21px;
+            padding: 20px;
+        }
+
+        [data-testid="stRadio"] > div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        [data-testid="stRadio"] label {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            border-radius: 16px;
+            padding: 10px 8px;
+        }
     }
     </style>
     """,
