@@ -8,7 +8,7 @@ import streamlit as st
 # PAGE CONFIG
 # =========================
 st.set_page_config(
-    page_title="Movie Review Sentiment Analyzer",
+    page_title="Sentiment Analysis Tool for Movie Reviews",
     page_icon="🎬",
     layout="wide"
 )
@@ -266,7 +266,7 @@ st.markdown(
     """
     <div class="top-header">
         <div>
-            <div class="brand-title">Movie Review Sentiment Analyzer</div>
+            <div class="brand-title">Sentiment Analysis Tool for Movie Reviews</div>
             <div class="brand-subtitle">A simple web app for checking positive and negative movie review sentiment</div>
         </div>
         <div class="model-pill">Final model: Logistic Regression</div>
@@ -298,7 +298,7 @@ if page == "Home":
     st.markdown(
         """
         <div class="hero-card">
-            <div class="hero-title">Understand movie reviews faster</div>
+            <div class="hero-title">Sentiment Analysis Tool for Movie Reviews</div>
             <div class="hero-subtitle">
                 This project checks whether a movie review sounds mostly positive or negative.
                 The user enters a review, and the app gives a prediction with a confidence score.
@@ -602,7 +602,7 @@ elif page == "About":
 st.markdown(
     """
     <div class="footer">
-        Movie Review Sentiment Analyzer | Python and Machine Learning Project
+        Sentiment Analysis Tool for Movie Reviews | Python and Machine Learning Project
     </div>
     """,
     unsafe_allow_html=True
