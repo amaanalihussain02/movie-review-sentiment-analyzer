@@ -28,18 +28,24 @@ st.markdown(
     [data-testid="stDecoration"] {display: none !important;}
     [data-testid="stStatusWidget"] {display: none !important;}
 
+    html, body, .stApp {
+        background: #f8fafc !important;
+        color: #0f172a !important;
+    }
+
     .stApp {
-        background: #f8fafc;
+        background: #f8fafc !important;
     }
 
     .block-container {
         padding-top: 1.2rem;
         padding-bottom: 2rem;
         max-width: 1180px;
+        color: #0f172a !important;
     }
 
     .top-header {
-        background: white;
+        background: #ffffff !important;
         padding: 18px 26px;
         border-radius: 18px;
         border: 1px solid #e5e7eb;
@@ -54,20 +60,20 @@ st.markdown(
     .brand-title {
         font-size: 24px;
         font-weight: 800;
-        color: #0f172a;
+        color: #0f172a !important;
         margin-bottom: 3px;
         line-height: 1.25;
     }
 
     .brand-subtitle {
         font-size: 14px;
-        color: #64748b;
+        color: #64748b !important;
         line-height: 1.5;
     }
 
     .model-pill {
-        background: #eff6ff;
-        color: #1d4ed8;
+        background: #eff6ff !important;
+        color: #1d4ed8 !important;
         padding: 10px 16px;
         border-radius: 12px;
         font-size: 14px;
@@ -76,8 +82,12 @@ st.markdown(
         white-space: nowrap;
     }
 
+    .model-pill * {
+        color: #1d4ed8 !important;
+    }
+
     .nav-card {
-        background: white;
+        background: #ffffff !important;
         padding: 10px 18px;
         border-radius: 16px;
         border: 1px solid #e5e7eb;
@@ -89,7 +99,7 @@ st.markdown(
         background: linear-gradient(135deg, #1e293b 0%, #334155 45%, #2563eb 100%);
         padding: 42px;
         border-radius: 24px;
-        color: white;
+        color: #ffffff !important;
         box-shadow: 0 16px 38px rgba(15, 23, 42, 0.18);
         margin-bottom: 28px;
     }
@@ -99,90 +109,121 @@ st.markdown(
         font-weight: 850;
         margin-bottom: 12px;
         line-height: 1.12;
+        color: #ffffff !important;
     }
 
     .hero-subtitle {
         font-size: 17px;
         line-height: 1.7;
-        color: #e5e7eb;
+        color: #e5e7eb !important;
         max-width: 900px;
     }
 
     .section-card {
-        background: white;
+        background: #ffffff !important;
         padding: 30px;
         border-radius: 20px;
         box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
         border: 1px solid #e5e7eb;
         margin-bottom: 22px;
+        color: #0f172a !important;
+    }
+
+    .section-card h1,
+    .section-card h2,
+    .section-card h3,
+    .section-card p,
+    .section-card li,
+    .section-card span,
+    .section-card div {
+        color: #0f172a !important;
     }
 
     .feature-card {
-        background: white;
+        background: #ffffff !important;
         padding: 24px;
         border-radius: 18px;
         border: 1px solid #e5e7eb;
         box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
         min-height: 145px;
+        color: #0f172a !important;
     }
 
     .feature-title {
         font-size: 19px;
         font-weight: 750;
-        color: #111827;
+        color: #111827 !important;
         margin-bottom: 8px;
     }
 
     .feature-text {
-        color: #4b5563;
+        color: #4b5563 !important;
         font-size: 15px;
         line-height: 1.65;
     }
 
     .positive-box {
-        background: #dcfce7;
+        background: #dcfce7 !important;
         padding: 24px;
         border-radius: 16px;
         border-left: 8px solid #16a34a;
-        color: #14532d;
+        color: #14532d !important;
         font-size: 24px;
         font-weight: 800;
         margin-top: 22px;
         margin-bottom: 15px;
+    }
+
+    .positive-box * {
+        color: #14532d !important;
     }
 
     .negative-box {
-        background: #fee2e2;
+        background: #fee2e2 !important;
         padding: 24px;
         border-radius: 16px;
         border-left: 8px solid #dc2626;
-        color: #7f1d1d;
+        color: #7f1d1d !important;
         font-size: 24px;
         font-weight: 800;
         margin-top: 22px;
         margin-bottom: 15px;
     }
 
+    .negative-box * {
+        color: #7f1d1d !important;
+    }
+
     .summary-box {
-        background: white;
+        background: #ffffff !important;
         padding: 24px;
         border-radius: 18px;
         border: 1px solid #e5e7eb;
         box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
         margin-top: 20px;
         margin-bottom: 18px;
+        color: #0f172a !important;
+    }
+
+    .summary-box h1,
+    .summary-box h2,
+    .summary-box h3,
+    .summary-box p,
+    .summary-box span,
+    .summary-box div {
+        color: #0f172a !important;
     }
 
     .footer {
         text-align: center;
-        color: #64748b;
+        color: #64748b !important;
         font-size: 13px;
         padding-top: 25px;
     }
 
     div.stButton > button {
-        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-        color: white;
+        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+        color: #ffffff !important;
         border: none;
         border-radius: 12px;
         padding: 0.75rem 1.5rem;
@@ -191,13 +232,29 @@ st.markdown(
     }
 
     div.stButton > button:hover {
-        background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-        color: white;
+        background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+        color: #ffffff !important;
         border: none;
+    }
+
+    div.stButton > button * {
+        color: #ffffff !important;
     }
 
     textarea {
         border-radius: 14px !important;
+        background-color: #f1f5f9 !important;
+        color: #111827 !important;
+    }
+
+    textarea::placeholder {
+        color: #6b7280 !important;
+        opacity: 1 !important;
+    }
+
+    input,
+    input::placeholder {
+        color: #111827 !important;
     }
 
     .stTabs [data-baseweb="tab-list"] {
@@ -207,6 +264,11 @@ st.markdown(
     .stTabs [data-baseweb="tab"] {
         padding: 10px 16px;
         border-radius: 10px;
+        color: #111827 !important;
+    }
+
+    .stTabs [data-baseweb="tab"] * {
+        color: #111827 !important;
     }
 
     /* Horizontal navigation style */
@@ -217,16 +279,95 @@ st.markdown(
     }
 
     [data-testid="stRadio"] label {
-        background: #f1f5f9;
-        border: 1px solid #e2e8f0;
+        background: #f1f5f9 !important;
+        border: 1px solid #e2e8f0 !important;
         padding: 8px 14px;
         border-radius: 999px;
         cursor: pointer;
+        color: #111827 !important;
+        opacity: 1 !important;
     }
 
     [data-testid="stRadio"] label:hover {
-        background: #e0ecff;
-        border-color: #93c5fd;
+        background: #e0ecff !important;
+        border-color: #93c5fd !important;
+    }
+
+    [data-testid="stRadio"] label *,
+    [data-testid="stRadio"] span,
+    [data-testid="stRadio"] div,
+    [data-testid="stRadio"] p {
+        color: #111827 !important;
+        opacity: 1 !important;
+    }
+
+    /* Force Streamlit normal text to stay visible */
+    .block-container p,
+    .block-container span,
+    .block-container label,
+    .block-container div,
+    .block-container h1,
+    .block-container h2,
+    .block-container h3,
+    .block-container h4,
+    .block-container h5,
+    .block-container h6,
+    .block-container li {
+        color: #0f172a !important;
+    }
+
+    /* But keep hero/banner text white */
+    .hero-card,
+    .hero-card div,
+    .hero-card p,
+    .hero-card span,
+    .hero-card h1,
+    .hero-card h2,
+    .hero-card h3,
+    .hero-title {
+        color: #ffffff !important;
+    }
+
+    .hero-subtitle {
+        color: #e5e7eb !important;
+    }
+
+    /* Fix Streamlit metrics */
+    [data-testid="stMetric"],
+    [data-testid="stMetric"] *,
+    [data-testid="metric-container"],
+    [data-testid="metric-container"] *,
+    [data-testid="stMetricLabel"],
+    [data-testid="stMetricValue"] {
+        color: #111827 !important;
+        opacity: 1 !important;
+    }
+
+    /* Fix dataframe/table area */
+    [data-testid="stDataFrame"],
+    [data-testid="stDataFrame"] *,
+    .stDataFrame,
+    .stDataFrame * {
+        color: #111827 !important;
+    }
+
+    /* Fix expander */
+    [data-testid="stExpander"],
+    [data-testid="stExpander"] *,
+    details,
+    details * {
+        color: #111827 !important;
+    }
+
+    /* Fix success/warning/info messages */
+    [data-testid="stAlert"],
+    [data-testid="stAlert"] * {
+        color: #111827 !important;
+    }
+
+    /* Fix progress area spacing and visibility */
+    [data-testid="stProgress"] {
+        color: #111827 !important;
     }
 
     /* Mobile responsive fixes */
@@ -303,6 +444,61 @@ st.markdown(
             text-align: center;
             border-radius: 16px;
             padding: 10px 8px;
+        }
+    }
+
+    /* Extra fix for devices using dark mode */
+    @media (prefers-color-scheme: dark) {
+        html, body, .stApp {
+            background: #f8fafc !important;
+            color: #0f172a !important;
+        }
+
+        .top-header,
+        .nav-card,
+        .section-card,
+        .feature-card,
+        .summary-box {
+            background: #ffffff !important;
+            color: #0f172a !important;
+        }
+
+        .brand-title,
+        .feature-title,
+        .section-card *,
+        .feature-card *,
+        .summary-box *,
+        [data-testid="stRadio"] *,
+        [data-testid="stMetric"] *,
+        [data-testid="metric-container"] * {
+            color: #0f172a !important;
+            opacity: 1 !important;
+        }
+
+        .brand-subtitle,
+        .feature-text,
+        .footer {
+            color: #64748b !important;
+        }
+
+        .hero-card,
+        .hero-card *,
+        .hero-title {
+            color: #ffffff !important;
+        }
+
+        .hero-subtitle {
+            color: #e5e7eb !important;
+        }
+
+        .model-pill,
+        .model-pill * {
+            color: #1d4ed8 !important;
+        }
+
+        textarea {
+            background-color: #f1f5f9 !important;
+            color: #111827 !important;
         }
     }
     </style>
