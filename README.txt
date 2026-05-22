@@ -1,4 +1,4 @@
-Movie Review Sentiment Analyzer
+Sentiment Analysis Tool for Movie Reviews
 
 Project Overview
 This project is a movie review sentiment analysis web app. The app allows a user to enter a movie review and predicts whether the review sounds positive or negative. It also shows a confidence score for the prediction.
@@ -19,6 +19,7 @@ Technology Used
 - Streamlit
 - Pandas
 - Scikit-learn
+- NumPy
 - TF-IDF Vectorizer
 - Naive Bayes
 - Logistic Regression
@@ -27,6 +28,7 @@ Technology Used
 
 Dataset
 The project uses the IMDb 50K Movie Reviews dataset.
+
 The dataset contains:
 - 50,000 total reviews
 - 25,000 positive reviews
@@ -69,11 +71,22 @@ Movie_Review_Sentiment_Analyzer/
   - logistic_regression_confusion_matrix.png
   - naive_bayes_report.txt
   - naive_bayes_confusion_matrix.png
-- screenshots/
+- .streamlit/
+  - config.toml
+
+Requirements File
+The requirements.txt file only contains the main packages needed to run the project:
+
+streamlit
+pandas
+scikit-learn
+joblib
+matplotlib
+numpy
 
 How to Run the Project
 
-Step 1: Open the project folder in VS Code.
+Step 1: Open the project folder in VS Code or PowerShell.
 
 Step 2: Create and activate a virtual environment.
 
@@ -81,6 +94,12 @@ Command:
 python -m venv venv
 
 For Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+
+If PowerShell blocks activation, run this command first:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+
+Then activate again:
 .\venv\Scripts\Activate.ps1
 
 Step 3: Install required packages.
@@ -126,3 +145,11 @@ Important Notes
 - If the model files are missing, run train_model.py first.
 - The dataset is only needed for checking and training.
 - The trained app uses sentiment_model.pkl and tfidf_vectorizer.pkl for prediction.
+- The .streamlit/config.toml file is included to keep the app in light mode and improve text visibility across devices.
+- The venv folder is not included because it can be recreated using the steps above.
+
+Live App Link
+https://movie-review-sentiment-analyzer-9rfaqf7z7nr5vrs4na2jn5.streamlit.app/
+
+GitHub Repository
+https://github.com/amaanalihussain02/movie-review-sentiment-analyzer
